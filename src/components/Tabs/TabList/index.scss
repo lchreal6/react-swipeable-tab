@@ -1,0 +1,11 @@
+.pp-tabList {
+  width: 100%;
+  .ink{
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    border-radius: 5px;
+  }
+}
