@@ -128,6 +128,7 @@ export default class TabList extends Component {
       scrollX:true, 
       scrollY:false, 
       useTransform: false, 
+      scrollbars: false,
     }
     return (
       <div className={cls} style={style}>

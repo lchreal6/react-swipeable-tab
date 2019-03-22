@@ -25,6 +25,12 @@ export default class Panel extends Component {
     return false;
   }
 
+  componentDidUpdate(nextProps) {
+    if(nextProps.activeIndex !== this.props.activeIndex) {
+      this.props.updateHeight && this.props.updateHeight();
+    }
+  }
+
   render() {
     const { panelWidthPerCent, className, style, panelIscroll, panelIscrollOptions } = this.props;
     const panelStyle = {

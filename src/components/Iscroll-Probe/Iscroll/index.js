@@ -45,7 +45,7 @@ export default (Iscroll) => {
         mouseWheel: true,
         interactiveScrollbars: true,
         shrinkScrollbars: 'scale',
-        fadeScrollbars: true,
+        fadeScrollbars: false,
         preventDefault: false,
         scrollbarClass: 'pp-scrollbar',
         probeType: 1
