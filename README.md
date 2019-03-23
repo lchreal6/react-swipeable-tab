@@ -1,6 +1,8 @@
 # react-swipeable-tab
 
-一个可滑动切换，异步加载数据，具有流畅滚动特性的React-Tab组件
+一个可滑动切换，异步加载数据，具有流畅滚动特性的React-Tab组件  
+
+感谢[react-tabtab](https://github.com/ctxhou/react-tabtab)提供的组件，在此基础上进行了功能特性的丰富
 
 ### Simple Tab
 
@@ -137,6 +139,8 @@
 </table>
 
 ### &lt;TabList /&gt;
+用来包裹 &lt;Tab /&gt; 组件
+
 <table>
   <tbody>
     <tr>
@@ -193,6 +197,8 @@
 </table>
 
 ### &lt;PanelList /&gt;
+用来包裹 &lt;Panel /&gt; 组件
+
 <table>
   <tbody>
     <tr>
