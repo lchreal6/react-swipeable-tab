@@ -4,21 +4,28 @@
 
 感谢[react-tabtab](https://github.com/ctxhou/react-tabtab)提供的组件，在此基础上进行了功能特性的丰富
 
+
+## 使用
+
 ### Simple Tab
+一个简单用法的tab
 
 ```js
 ```
 
 ### Multipe Tab
+多tab导航栏
 
 ```js
 ```
 ### AnimateHeight Tab
+自动调整高度伸缩tab
 
 ```js
 ```
 
 ### Async Loading Tab
+异步加载内容tab
 
 ```js
 ```
