@@ -8,6 +8,18 @@
 
 ## 使用
 
+install
+
+```bash
+npm i react-swipeable-tab --save
+```
+
+import
+
+```js
+import { Tab, Tabs, TabList, Panel, PanelList } from "react-swipeable-tab";
+```
+
 ### Simple Tab
 
 一个简单用法的 tab
