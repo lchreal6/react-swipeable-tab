@@ -1,36 +1,231 @@
 # react-swipeable-tab
 
-一个可滑动切换，异步加载数据，具有流畅滚动特性的React-Tab组件  
+一个可滑动切换，异步加载数据，具有流畅滚动特性的 React-Tab 组件
 
 参考了[react-tabtab](https://github.com/ctxhou/react-tabtab)提供的组件，在此基础上进行了功能特性的丰富
-
 
 ## 使用
 
 ### Simple Tab
-一个简单用法的tab
+
+一个简单用法的 tab
 
 ```js
+import React, { Component } from "react";
+import { Tab, Tabs, TabList, Panel, PanelList } from "react-swipeable-tab";
+
+export default class Demo extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      tab1_activeIndex: 0
+    };
+  }
+  onTab1_Change = index => {
+    this.setState({
+      tab1_activeIndex: index
+    });
+  };
+
+  render() {
+    const { tab1_activeIndex } = this.state;
+    return (
+      <Tabs activeIndex={tab1_activeIndex} onTabChange={this.onTab1_Change}>
+        <TabList style={{ height: "40px" }}>
+          <Tab>tab1</Tab>
+          <Tab>tab2</Tab>
+          <Tab>tab3</Tab>
+        </TabList>
+        <PanelList style={{ height: "100px" }}>
+          <Panel>
+            <p>content1</p>
+            <p>content1</p>
+            <p>content1</p>
+            <p>content1</p>
+            <p>content1</p>
+            <p>content1</p>
+            <p>content1</p>
+            <p>content1</p>
+          </Panel>
+          <Panel>content2</Panel>
+          <Panel>content3</Panel>
+        </PanelList>
+      </Tabs>
+    );
+  }
+}
 ```
 
 ### Multipe Tab
-多tab导航栏
+
+多 tab 导航栏
 
 ```js
+import React, { Component } from "react";
+import { Tab, Tabs, TabList, Panel, PanelList } from "react-swipeable-tab";
+
+export default class Demo extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      tab2_activeIndex: 0
+    };
+  }
+  onTab2_Change = index => {
+    this.setState({
+      tab2_activeIndex: index
+    });
+  };
+
+  render() {
+    const { tab2_activeIndex } = this.state;
+    return (
+      <Tabs
+        activeIndex={tab2_activeIndex}
+        onTabChange={this.onTab2_Change}
+        page={5}
+      >
+        <TabList style={{ height: "40px" }}>
+          <Tab>tab1</Tab>
+          <Tab>tab2</Tab>
+          <Tab>tab3</Tab>
+          <Tab>tab4</Tab>
+          <Tab>tab5</Tab>
+          <Tab>tab6</Tab>
+          <Tab>tab7</Tab>
+          <Tab>tab8</Tab>
+          <Tab>tab9</Tab>
+        </TabList>
+        <PanelList style={{ height: "100px" }}>
+          <Panel>content1</Panel>
+          <Panel>content2</Panel>
+          <Panel>content3</Panel>
+          <Panel>content4</Panel>
+          <Panel>content5</Panel>
+          <Panel>content6</Panel>
+          <Panel>content7</Panel>
+          <Panel>content8</Panel>
+          <Panel>content9</Panel>
+        </PanelList>
+      </Tabs>
+    );
+  }
+}
 ```
+
 ### AnimateHeight Tab
-自动调整高度伸缩tab
+
+自动调整高度伸缩 tab
 
 ```js
+import React, { Component } from "react";
+import { Tab, Tabs, TabList, Panel, PanelList } from "react-swipeable-tab";
+
+export default class Demo extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      tab3_activeIndex: 0
+    };
+  }
+  onTab3_Change = index => {
+    this.setState({
+      tab3_activeIndex: index
+    });
+  };
+
+  render() {
+    const { tab3_activeIndex } = this.state;
+    return (
+      <Tabs
+        animateHeight={true}
+        activeIndex={tab3_activeIndex}
+        onTabChange={this.onTab3_Change}
+      >
+        <TabList style={{ height: "40px" }}>
+          <Tab>tab1</Tab>
+          <Tab>tab2</Tab>
+          <Tab>tab3</Tab>
+        </TabList>
+        <PanelList style={{ height: "50px" }}>
+          <Panel minPanelHeight={"50px"} style={{ height: "50px" }}>
+            content1
+          </Panel>
+          <Panel minPanelHeight={"150px"} style={{ height: "100px" }}>
+            content1
+          </Panel>
+          <Panel minPanelHeight={"350px"} style={{ height: "150px" }}>
+            content1
+          </Panel>
+        </PanelList>
+      </Tabs>
+    );
+  }
+}
 ```
 
 ### Async Loading Tab
-异步加载内容tab
+
+异步加载内容 tab
 
 ```js
+import React, { Component } from "react";
+import { Tab, Tabs, TabList, Panel, PanelList } from "react-swipeable-tab";
+
+export default class Demo extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      tab4_activeIndex: 0
+    };
+  }
+  onTab4_Change = index => {
+    this.setState({
+      tab4_activeIndex: index
+    });
+  };
+  loadingConetent = () => {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve("content");
+      }, 2000);
+    });
+  };
+
+  render() {
+    const { tab4_activeIndex } = this.state;
+    return (
+      <Tabs activeIndex={tab4_activeIndex} onTabChange={this.onTab4_Change}>
+        <TabList style={{ height: "40px" }}>
+          <Tab>tab1</Tab>
+          <Tab>tab2</Tab>
+          <Tab>tab3</Tab>
+        </TabList>
+        <PanelList style={{ height: "100px" }}>
+          <AsyncPanel
+            loadContent={this.loadingConetent}
+            render={data => <div>{data}</div>}
+            renderLoading={() => <div>loading...</div>}
+          />
+          <AsyncPanel
+            loadContent={this.loadingConetent}
+            render={data => <div>{data}</div>}
+            renderLoading={() => <div>loading...</div>}
+          />
+          <AsyncPanel
+            loadContent={this.loadingConetent}
+            render={data => <div>{data}</div>}
+            renderLoading={() => <div>loading...</div>}
+          />
+        </PanelList>
+      </Tabs>
+    );
+  }
+}
 ```
 
 ## API
+
 ### &lt;Tabs /&gt;
 
 <table>
@@ -146,6 +341,7 @@
 </table>
 
 ### &lt;TabList /&gt;
+
 用来包裹 &lt;Tab /&gt; 组件
 
 <table>
@@ -176,7 +372,8 @@
 </table>
 
 ### &lt;Tab /&gt;
-顶部tab导航栏面板
+
+顶部 tab 导航栏面板
 
 <table>
   <tbody>
@@ -206,6 +403,7 @@
 </table>
 
 ### &lt;PanelList /&gt;
+
 用来包裹 &lt;Panel /&gt; 组件
 
 <table>
@@ -236,6 +434,7 @@
 </table>
 
 ### &lt;Panel /&gt;
+
 内容面板
 
 <table>
@@ -278,6 +477,7 @@
 </table>
 
 ### &lt;AsyncPanel /&gt;
+
 具有异步加载数据功能的内容面板
 
 <table>
