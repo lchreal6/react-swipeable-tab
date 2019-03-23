@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import {
   Tab,
   Tabs,
@@ -43,7 +42,8 @@ class App extends Component {
     this.state = {
       tab1_activeIndex: 0,
       tab2_activeIndex: 0,
-      tab3_activeIndex: 0
+      tab3_activeIndex: 0,
+      tab4_activeIndex: 0
     };
   }
 
