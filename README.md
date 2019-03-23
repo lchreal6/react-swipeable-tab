@@ -251,6 +251,24 @@
         设置添加样式类名
       </td>
     </tr>
+    <tr>
+      <td>panelIscrollOptions</td>
+      <td>object</td>
+      <td><code>
+        {
+        scrollbars: false,
+        mouseWheel: true,
+        interactiveScrollbars: true,
+        shrinkScrollbars: 'scale',
+        fadeScrollbars: true,
+        preventDefault: false,
+        probeType: 1
+      }
+        </code></td>
+      <td>
+        iscroll组件配置
+      </td>
+    </tr>
   </tbody>
 </table>
 
@@ -277,6 +295,24 @@
       <td>null</td>
       <td>
         设置添加样式类名
+      </td>
+    </tr>
+    <tr>
+      <td>panelIscrollOptions</td>
+      <td>object</td>
+      <td><code>
+        {
+        scrollbars: false,
+        mouseWheel: true,
+        interactiveScrollbars: true,
+        shrinkScrollbars: 'scale',
+        fadeScrollbars: true,
+        preventDefault: false,
+        probeType: 1
+      }
+        </code></td>
+      <td>
+        iscroll组件配置
       </td>
     </tr>
     <tr>
