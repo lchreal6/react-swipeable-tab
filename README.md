@@ -11,6 +11,7 @@
 ### Simple Tab
 
 一个简单用法的 tab
+
 ![](/assets/simple-tab.gif)
 
 ```js
@@ -62,6 +63,7 @@ export default class Demo extends Component {
 ### Multipe Tab
 
 多 tab 导航栏
+
 ![](/assets/multiple-tab.gif)
 
 ```js
@@ -120,6 +122,7 @@ export default class Demo extends Component {
 ### AnimateHeight Tab
 
 自动调整高度伸缩 tab
+
 ![](/assets/animateHeight-tab.gif)
 
 ```js
@@ -172,6 +175,7 @@ export default class Demo extends Component {
 ### Async Loading Tab
 
 异步加载内容 tab
+
 ![](/assets/async-tab.gif)
 
 ```js
