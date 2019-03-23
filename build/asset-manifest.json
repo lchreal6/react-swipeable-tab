@@ -1,14 +1,14 @@
 {
-  "main.css": "/static/css/main.e20e63e2.chunk.css",
-  "main.js": "/static/js/main.629a6dce.chunk.js",
-  "main.js.map": "/static/js/main.629a6dce.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-  "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-  "static/js/2.7f1e2e91.chunk.js": "/static/js/2.7f1e2e91.chunk.js",
-  "static/js/2.7f1e2e91.chunk.js.map": "/static/js/2.7f1e2e91.chunk.js.map",
-  "index.html": "/index.html",
-  "precache-manifest.74ff1ef808f434026a09be3013fadf5b.js": "/precache-manifest.74ff1ef808f434026a09be3013fadf5b.js",
-  "service-worker.js": "/service-worker.js",
-  "static/css/main.e20e63e2.chunk.css.map": "/static/css/main.e20e63e2.chunk.css.map",
-  "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg"
+  "main.css": "/react-swipeable-tab/build/static/css/main.e20e63e2.chunk.css",
+  "main.js": "/react-swipeable-tab/build/static/js/main.033cf2ba.chunk.js",
+  "main.js.map": "/react-swipeable-tab/build/static/js/main.033cf2ba.chunk.js.map",
+  "runtime~main.js": "/react-swipeable-tab/build/static/js/runtime~main.dfca0ba7.js",
+  "runtime~main.js.map": "/react-swipeable-tab/build/static/js/runtime~main.dfca0ba7.js.map",
+  "static/js/2.7f1e2e91.chunk.js": "/react-swipeable-tab/build/static/js/2.7f1e2e91.chunk.js",
+  "static/js/2.7f1e2e91.chunk.js.map": "/react-swipeable-tab/build/static/js/2.7f1e2e91.chunk.js.map",
+  "index.html": "/react-swipeable-tab/build/index.html",
+  "precache-manifest.690d36cd91ccfb2dc746a6666b536671.js": "/react-swipeable-tab/build/precache-manifest.690d36cd91ccfb2dc746a6666b536671.js",
+  "service-worker.js": "/react-swipeable-tab/build/service-worker.js",
+  "static/css/main.e20e63e2.chunk.css.map": "/react-swipeable-tab/build/static/css/main.e20e63e2.chunk.css.map",
+  "static/media/logo.svg": "/react-swipeable-tab/build/static/media/logo.5d5d9eef.svg"
 }
