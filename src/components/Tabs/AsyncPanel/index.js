@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import Panel from '../Panel';
-import './index.scss';
 
 /**
  * @description 异步加载panel内容组件

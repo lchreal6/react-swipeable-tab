@@ -7,9 +7,11 @@
     "react-dom": "^16.8.4",
     "react-scripts": "2.1.8"
   },
+  "main": "lib/index.js",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "lib-build": "rollup -c",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -23,8 +25,17 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "@babel/preset-react": "^7.0.0",
     "classnames": "^2.2.6",
-    "node-sass": "^4.11.0"
+    "node-sass": "^4.11.0",
+    "rollup": "^1.7.0",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^9.2.1",
+    "rollup-plugin-node-resolve": "^4.0.1",
+    "rollup-plugin-postcss": "^2.0.3",
+    "rollup-plugin-uglify": "^6.0.2"
   },
   "homepage": "https://lchreal6.github.io/react-swipeable-tab/build/"
 }
