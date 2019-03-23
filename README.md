@@ -2,7 +2,7 @@
 
 一个可滑动切换，异步加载数据，具有流畅滚动特性的React-Tab组件  
 
-感谢[react-tabtab](https://github.com/ctxhou/react-tabtab)提供的组件，在此基础上进行了功能特性的丰富
+参考了[react-tabtab](https://github.com/ctxhou/react-tabtab)提供的组件，在此基础上进行了功能特性的丰富
 
 
 ## 使用
