@@ -169,6 +169,8 @@
 </table>
 
 ### &lt;Tab /&gt;
+顶部tab导航栏面板
+
 <table>
   <tbody>
     <tr>
@@ -227,6 +229,8 @@
 </table>
 
 ### &lt;Panel /&gt;
+内容面板
+
 <table>
   <tbody>
     <tr>
@@ -267,6 +271,8 @@
 </table>
 
 ### &lt;AsyncPanel /&gt;
+具有异步加载数据功能的内容面板
+
 <table>
   <tbody>
     <tr>
