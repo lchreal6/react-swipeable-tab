@@ -1,68 +1,135 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# react-swipeable-tab
 
-## Available Scripts
+一个可滑动切换，异步加载数据，具有流畅滚动特性的React-Tab组件
 
-In the project directory, you can run:
+### Simple Tab
 
-### `npm start`
+```js
+```
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Multipe Tab
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+```js
+```
+### AnimateHeight Tab
 
-### `npm test`
+```js
+```
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Async Loading Tab
 
-### `npm run build`
+```js
+```
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## API
+### &lt;Tabs /&gt;
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+<table>
+  <tbody>
+    <tr>
+      <th>属性</th>
+      <th>类型</th>
+      <th>默认值</th>
+      <th>说明</th>
+    </tr>
+    <tr>
+      <td>defaultIndex</td>
+      <td><code>int</code></td>
+      <td>null</td>
+      <td>初始化tab的显示面板</td>
+    </tr>
+    <tr>
+      <td>activeIndex</td>
+      <td><code>int</code></td>
+      <td>null</td>
+      <td>当前激活的tab面板的key</td>
+    </tr>
+    <tr>
+      <td>onTabChange</td>
+      <td><code>() => tabIndex</code></td>
+      <td>null</td>
+      <td>
+        返回被点击的面板的key<br/>
+        你可以使用这个方法更新面板的activeIndex，来切换tab
+      </td>
+    </tr>
+    <tr>
+      <td>style</td>
+      <td>
+        <pre>
+<code>{
+  backgroundColor: 'red',
+  height: '50px
+}</code></pre>
+      </td>
+      <td>object</td>
+      <td>
+        自定义组件样式
+      </td>
+    </tr>
+    <tr>
+      <td>className</td>
+      <td>string</td>
+      <td>null</td>
+      <td>
+        设置添加样式类名
+      </td>
+    </tr>
+    <tr>
+      <td>swiperMove</td>
+      <td>boolean</td>
+      <td>true</td>
+      <td>
+        是否开启滑动切换tab
+      </td>
+    </tr>
+    <tr>
+      <td>animate</td>
+      <td>boolean</td>
+      <td>true</td>
+      <td>
+        是否开启滑动切换动画特性
+      </td>
+    </tr>
+    <tr>
+      <td>showInk</td>
+      <td>boolean</td>
+      <td>true</td>
+      <td>
+        顶部tab导航栏当前激活的面板是否底部显示横线标识
+      </td>
+    </tr>
+    <tr>
+      <td>inkColor</td>
+      <td>string</td>
+      <td>'#2A84F8'</td>
+      <td>
+        顶部tab导航栏当前激活的面板底部横线颜色
+      </td>
+    </tr>
+    <tr>
+      <td>activeTabColor</td>
+      <td>string</td>
+      <td>'#2A84F8'</td>
+      <td>
+        顶部tab导航栏当前激活的面板文字颜色
+      </td>
+    </tr>
+    <tr>
+      <td>panelIscroll</td>
+      <td>boolean</td>
+      <td>true</td>
+      <td>
+        tab内容面板是否使用iscroll组件，具有iscroll滚动的特性
+      </td>
+    </tr>
+    <tr>
+      <td>threshold</td>
+      <td>int</td>
+      <td>5</td>
+      <td>
+        快速切屏的时间阈值系数
+      </td>
+    </tr>
+  </tbody>
+</table>
