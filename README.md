@@ -55,14 +55,8 @@
     </tr>
     <tr>
       <td>style</td>
-      <td>
-        <pre>
-<code>{
-  backgroundColor: 'red',
-  height: '50px
-}</code></pre>
-      </td>
       <td>object</td>
+      <td>null</td>
       <td>
         自定义组件样式
       </td>
@@ -129,6 +123,186 @@
       <td>5</td>
       <td>
         快速切屏的时间阈值系数
+      </td>
+    </tr>
+    <tr>
+      <td>page</td>
+      <td>int</td>
+      <td>null</td>
+      <td>
+        屏幕最多显示多少个tab导航面板
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+### &lt;TabList /&gt;
+<table>
+  <tbody>
+    <tr>
+      <th>属性</th>
+      <th>类型</th>
+      <th>默认值</th>
+      <th>说明</th>
+    </tr>
+    <tr>
+      <td>style</td>
+      <td>object</td>
+      <td>null</td>
+      <td>
+        自定义组件样式
+      </td>
+    </tr>
+    <tr>
+      <td>className</td>
+      <td>string</td>
+      <td>null</td>
+      <td>
+        设置添加样式类名
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+### &lt;Tab /&gt;
+<table>
+  <tbody>
+    <tr>
+      <th>属性</th>
+      <th>类型</th>
+      <th>默认值</th>
+      <th>说明</th>
+    </tr>
+    <tr>
+      <td>style</td>
+      <td>object</td>
+      <td>null</td>
+      <td>
+        自定义组件样式
+      </td>
+    </tr>
+    <tr>
+      <td>className</td>
+      <td>string</td>
+      <td>null</td>
+      <td>
+        设置添加样式类名
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+### &lt;PanelList /&gt;
+<table>
+  <tbody>
+    <tr>
+      <th>属性</th>
+      <th>类型</th>
+      <th>默认值</th>
+      <th>说明</th>
+    </tr>
+    <tr>
+      <td>style</td>
+      <td>object</td>
+      <td>null</td>
+      <td>
+        自定义组件样式
+      </td>
+    </tr>
+    <tr>
+      <td>className</td>
+      <td>string</td>
+      <td>null</td>
+      <td>
+        设置添加样式类名
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+### &lt;Panel /&gt;
+<table>
+  <tbody>
+    <tr>
+      <th>属性</th>
+      <th>类型</th>
+      <th>默认值</th>
+      <th>说明</th>
+    </tr>
+    <tr>
+      <td>style</td>
+      <td>object</td>
+      <td>null</td>
+      <td>
+        自定义组件样式
+      </td>
+    </tr>
+    <tr>
+      <td>className</td>
+      <td>string</td>
+      <td>null</td>
+      <td>
+        设置添加样式类名
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+### &lt;AsyncPanel /&gt;
+<table>
+  <tbody>
+    <tr>
+      <th>属性</th>
+      <th>类型</th>
+      <th>默认值</th>
+      <th>说明</th>
+    </tr>
+    <tr>
+      <td>loadContent </td>
+      <td>object</td>
+      <td>null</td>
+      <td>
+        自定义组件样式
+      </td>
+    </tr>
+    <tr>
+      <td>className</td>
+      <td>string</td>
+      <td>null</td>
+      <td>
+        设置添加样式类名
+      </td>
+    </tr>
+    <tr>
+      <td>style</td>
+      <td><code>(cb) => cb(error, data)</code>or<code>(cb) => Promise	</code></td>
+      <td>null</td>
+      <td>
+        需要异步加载数据的回调函数
+      </td>
+    </tr>
+    <tr>
+      <td>render </td>
+      <td><code>(data) => Component	</td>
+      <td>null</td>
+      <td>
+        数据加载完成后渲染的组件
+      </td>
+    </tr>
+    <tr>
+      <td>renderLoading  </td>
+      <td>() => Component	</td>
+      <td>null</td>
+      <td>
+        在进行数据异步加载时填充的loading组件
+      </td>
+    </tr>
+    <tr>
+      <td>renderLoading  </td>
+      <td>boolean</td>
+      <td>true</td>
+      <td>
+        加载后是否缓存数据
       </td>
     </tr>
   </tbody>
