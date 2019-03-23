@@ -249,7 +249,7 @@ export default class PanelList extends Component {
     }
 
     return (
-      <div className="pp-panelList" ref={(e) => {this.panelListRef = e}} className={cls} style={panelWrapperStyle} onTouchStart={this.handleTouchStart} onTouchMove={this.handleTouchMove} onTouchEnd={this.handleTouchEnd}>
+      <div ref={(e) => {this.panelListRef = e}} className={cls} style={panelWrapperStyle} onTouchStart={this.handleTouchStart} onTouchMove={this.handleTouchMove} onTouchEnd={this.handleTouchEnd}>
         {this.renderPanel()}
       </div>      
     )
