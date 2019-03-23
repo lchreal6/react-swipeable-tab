@@ -256,13 +256,7 @@
       <td>object</td>
       <td><code>
         {
-        scrollbars: false,
-        mouseWheel: true,
-        interactiveScrollbars: true,
-        shrinkScrollbars: 'scale',
         fadeScrollbars: true,
-        preventDefault: false,
-        probeType: 1
       }
         </code></td>
       <td>
@@ -302,13 +296,7 @@
       <td>object</td>
       <td><code>
         {
-        scrollbars: false,
-        mouseWheel: true,
-        interactiveScrollbars: true,
-        shrinkScrollbars: 'scale',
         fadeScrollbars: true,
-        preventDefault: false,
-        probeType: 1
       }
         </code></td>
       <td>
