@@ -17,7 +17,7 @@ npm i react-swipeable-tab --save
 import
 
 ```js
-import { Tab, Tabs, TabList, Panel, PanelList } from "react-swipeable-tab";
+import { Tab, Tabs, TabList, PanelList, Panel, AsyncPanel } from "react-swipeable-tab";
 ```
 
 ### Simple Tab
@@ -26,7 +26,7 @@ import { Tab, Tabs, TabList, Panel, PanelList } from "react-swipeable-tab";
 
 ![](/assets/simple-tab.gif)
 
-```js
+```jsx
 import React, { Component } from "react";
 import { Tab, Tabs, TabList, Panel, PanelList } from "react-swipeable-tab";
 
@@ -78,7 +78,7 @@ export default class Demo extends Component {
 
 ![](/assets/multiple-tab.gif)
 
-```js
+```jsx
 import React, { Component } from "react";
 import { Tab, Tabs, TabList, Panel, PanelList } from "react-swipeable-tab";
 
@@ -137,7 +137,7 @@ export default class Demo extends Component {
 
 ![](/assets/animateHeight-tab.gif)
 
-```js
+```jsx
 import React, { Component } from "react";
 import { Tab, Tabs, TabList, Panel, PanelList } from "react-swipeable-tab";
 
@@ -190,9 +190,9 @@ export default class Demo extends Component {
 
 ![](/assets/async-tab.gif)
 
-```js
+```jsx
 import React, { Component } from "react";
-import { Tab, Tabs, TabList, Panel, PanelList } from "react-swipeable-tab";
+import { Tab, Tabs, TabList, AsyncPanel, PanelList } from "react-swipeable-tab";
 
 export default class Demo extends Component {
   constructor(props) {
