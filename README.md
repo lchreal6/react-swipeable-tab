@@ -511,7 +511,7 @@ export default class Demo extends Component {
       <th>说明</th>
     </tr>
     <tr>
-      <td>loadContent </td>
+      <td>style</td>
       <td>object</td>
       <td>null</td>
       <td>
@@ -539,7 +539,7 @@ export default class Demo extends Component {
       </td>
     </tr>
     <tr>
-      <td>style</td>
+      <td>loadContent</td>
       <td><code>(cb) => cb(error, data)</code>or<code>(cb) => Promise	</code></td>
       <td>null</td>
       <td>
@@ -548,7 +548,7 @@ export default class Demo extends Component {
     </tr>
     <tr>
       <td>render </td>
-      <td><code>(data) => Component	</td>
+      <td><code>(data) => Component	</code></td>
       <td>null</td>
       <td>
         数据加载完成后渲染的组件
@@ -556,14 +556,14 @@ export default class Demo extends Component {
     </tr>
     <tr>
       <td>renderLoading  </td>
-      <td>() => Component	</td>
+      <td><code>() => Component	</code></td>
       <td>null</td>
       <td>
         在进行数据异步加载时填充的loading组件
       </td>
     </tr>
     <tr>
-      <td>renderLoading  </td>
+      <td>cache</td>
       <td>boolean</td>
       <td>true</td>
       <td>
