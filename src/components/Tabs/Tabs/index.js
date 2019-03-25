@@ -58,7 +58,7 @@ export default class Tabs extends Component {
       handlePanelScroll: this.handlePanelScroll,
       ...extraProps,
     }
-    const cls = classNames('pp-tabs', className)
+    const cls = classNames('react-swipeable-tab-tabs', className)
     return (
       <div className={cls} style={style}>
         {

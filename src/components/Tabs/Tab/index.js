@@ -28,7 +28,7 @@ export default class Tab extends Component {
       color: `${active ? (activeTabColor || '#2A84F8') : ''}`,
       ...style,
     }
-    const cls = classNames('pp-tab', className, {
+    const cls = classNames('react-swipeable-tab-tab', className, {
       'active': active,
     })
     return (

@@ -92,13 +92,13 @@ export default (Iscroll) => {
     
     render() {
       return (
-        <div id={this.id} className={`pp-iscroll-wrap ${this.props.skinClass || ''}`} style={this.props.skinStyle}>
-          <div className='pp-iscroll' style={this.props.iscrollChildrenStyle}>
+        <div id={this.id} className={`react-swipeable-tab-iscroll-wrap ${this.props.skinClass || ''}`} style={this.props.skinStyle}>
+          <div className='react-swipeable-tab-iscroll' style={this.props.iscrollChildrenStyle}>
             {this.props.children}
           </div>
           {
             this.pullTips ?
-              <div className="pp-iscroll-pull-tips">{this.state.pullTips}</div>
+              <div className="react-swipeable-tab-iscroll-pull-tips">{this.state.pullTips}</div>
               : null
           }
         </div>

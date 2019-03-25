@@ -37,7 +37,7 @@ export default class Panel extends Component {
       width: `${panelWidthPerCent}%`,
       ...style,
     }
-    const cls = classNames('pp-panel', className);
+    const cls = classNames('react-swipeable-tab-panel', className);
     const options = {
       eventPassthrough: 'horizontal',
     }

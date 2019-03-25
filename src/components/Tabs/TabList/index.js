@@ -123,7 +123,7 @@ export default class TabList extends Component {
       transitionProperty: 'all',
       backgroundColor: `${inkColor || '#2A84F8'}`,
     }
-    const cls = classNames('pp-tabList', className);
+    const cls = classNames('react-swipeable-tab-tabList', className);
     const options = {
       scrollX:true, 
       scrollY:false, 

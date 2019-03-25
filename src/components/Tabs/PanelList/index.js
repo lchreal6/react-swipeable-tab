@@ -214,7 +214,7 @@ export default class PanelList extends Component {
   render() {
     const { panelWrapperPerCent, panelWrapperTranslation, scrolling, heightLatest } = this.state;
     const { className, style, minPanelHeight, animate } = this.props;
-    const cls = classNames('pp-panelList', className);
+    const cls = classNames('react-swipeable-tab-panelList', className);
     const springConfig = {
       duration: '0.35s',
       easeFunction: 'cubic-bezier(0.15, 0.3, 0.25, 1)',
