@@ -8,7 +8,7 @@ export default class TabList extends Component {
     super(props);
     const { children, page } = props;
     const childrenCount = React.Children.count(children);
-    if(page & childrenCount > page) {
+    if(page && childrenCount > page) {
       this.tabPageCount = page
     } else {
       this.tabPageCount = childrenCount
