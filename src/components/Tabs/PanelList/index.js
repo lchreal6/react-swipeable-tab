@@ -35,7 +35,7 @@ export default class PanelList extends Component {
   constructor(props) {
     super(props);
     const { children, activeIndex } = props;
-    this.childrenCount = React.Children.count(children);
+    this.childrenCount = (children || []).filter(v => !!v);
     const panelWidthPerCent = 100 / this.childrenCount;
     const panelWrapperPerCent = 100 * this.childrenCount;
     const panelWrapperTranslation = activeIndex * panelWidthPerCent;
@@ -194,15 +194,19 @@ export default class PanelList extends Component {
       }
       self[`panelIscroll-${index}`] = React.createRef();
 
-      return React.cloneElement(child, {
-        key: index,
-        tabIndex: index,
-        active: index === activeIndex,
-        panelWidthPerCent,
-        panelRef: panelRef,
-        myIscroll: self[`panelIscroll-${index}`],
-        ...props,
-      })
+      if (child) {
+        return React.cloneElement(child, {
+          key: index,
+          tabIndex: index,
+          active: index === activeIndex,
+          panelWidthPerCent,
+          panelRef: panelRef,
+          myIscroll: self[`panelIscroll-${index}`],
+          ...props,
+        })
+      } else {
+        return  null
+      }
     })
   }
 
